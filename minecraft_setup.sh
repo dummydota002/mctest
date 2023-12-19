@@ -5,16 +5,18 @@ sudo apt-get update
 sudo apt-get install -y default-jre screen
 
 # Download Minecraft server jar
-wget https://papermc.io/api/v2/projects/paper/versions/1.17.1/builds/425/downloads/paper-1.17.1-425.jar -O server.jar
+wget https://meta.fabricmc.net/v2/versions/loader/1.20.1/0.15.3/0.11.2/server/jar -O fabric-server-launcher.jar
 
-# Create a directory for the server
-mkdir minecraft_server
-cd minecraft_server
+# Run Fabric server installer
+java -jar fabric-server-launcher.jar server
+
+# Accept Minecraft EULA
+echo "eula=true" > eula.txt
 
 # Create a startup script
 cat << EOF > start.sh
 #!/bin/bash
-screen -S minecraft -dm java -Xmx2G -Xms1G -jar ../server.jar nogui
+screen -S minecraft -dm java -Xmx2G -Xms1G -jar fabric-server-launch.jar nogui
 EOF
 
 chmod +x start.sh
