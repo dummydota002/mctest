@@ -14,6 +14,9 @@ java -jar fabric-server-launcher.jar server
 # Accept Minecraft EULA
 echo "eula=true" > eula.txt
 
+# allow crack
+echo "online-mode=false" > server.properties
+
 # Create a startup script
 cat << EOF > start.sh
 #!/bin/bash
