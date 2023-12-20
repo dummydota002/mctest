@@ -1,3 +1,3 @@
-npm i ngrok --save-dev
-./node_modules/.bin/ngrok authtoken 2Zl4s7BAJSzFS2R6laPZWjgzQtj_4KtxhcK7ZsoftuR1pfNPp
-./node_modules/.bin/ngrok tcp 25565
+wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64
+chmod +x playit-linux-amd64
+./playit-linux-amd64
