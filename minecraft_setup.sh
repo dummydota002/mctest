@@ -15,16 +15,16 @@ wget -P mods https://cdn.modrinth.com/data/P7dR8mSH/versions/YblXfKtI/fabric-api
 # Accept Minecraft EULA
 echo "eula=true" > eula.txt
 
-# Run Fabric server installer
-java -jar fabric-server-launch.jar server
-
 # allow crack
 echo "online-mode=false" > server.properties
+
+# Run Fabric server installer
+java -jar fabric-server-launch.jar server
 
 # Create a startup script
 cat << EOF > start.sh
 #!/bin/bash
-screen -S minecraft -dm java -Xmx2G -Xms1G -jar fabric-server-launch.jar nogui
+java -Xmx2G -Xms1G -jar fabric-server-launch.jar nogui
 EOF
 
 chmod +x start.sh
