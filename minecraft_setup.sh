@@ -12,11 +12,11 @@ mkdir mods
 wget -P mods https://cdn.modrinth.com/data/MdwFAVRL/versions/YEzu8qAH/Cobblemon-fabric-1.4.0%2B1.20.1.jar
 wget -P mods https://cdn.modrinth.com/data/P7dR8mSH/versions/YblXfKtI/fabric-api-0.91.0%2B1.20.1.jar
 
-# Run Fabric server installer
-java -jar fabric-server-launch.jar server
-
 # Accept Minecraft EULA
 echo "eula=true" > eula.txt
+
+# Run Fabric server installer
+java -jar fabric-server-launch.jar server
 
 # allow crack
 echo "online-mode=false" > server.properties
