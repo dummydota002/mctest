@@ -3,5 +3,6 @@ chmod +x minecraft_setup.sh
 ./minecraft_setup.sh
 
 ## split terminal
-chmod +x server_ip.sh
-./server_ip.sh
+wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64
+chmod +x playit-linux-amd64
+./playit-linux-amd64
