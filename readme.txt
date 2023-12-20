@@ -3,6 +3,6 @@ chmod +x minecraft_setup.sh
 ./minecraft_setup.sh
 
 ## split terminal
-chmod +x server_ip.sh
-./server_ip.sh
+chmod +x playitgg.sh
+./playitgg.sh
 
