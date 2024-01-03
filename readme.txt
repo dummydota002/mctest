@@ -9,5 +9,5 @@ chmod +x mc_setup2.sh
 
 ## then this to share the server
 # split terminal then
-./playit-linux-amd64
+./playit
 
