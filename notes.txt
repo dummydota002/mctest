@@ -1,3 +1,9 @@
+## run this 1 by 1 on terminal to install (skip this if already installed)
+chmod +x mc_setup1.sh
+chmod +x mc_setup2.sh
+./mc_setup1.sh
+./mc_setup2.sh
+
 # download mod
 wget -P mods "link mod"
 

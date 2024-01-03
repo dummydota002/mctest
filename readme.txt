@@ -1,13 +1,9 @@
-## run this 1 by 1 on terminal to install (skip this if already installed)
-chmod +x mc_setup1.sh
-chmod +x mc_setup2.sh
-./mc_setup1.sh
-./mc_setup2.sh
-
-## run this to start server
+## run this to start minecraft (wait until "Done")
 ./start.sh
 
-## then this to share the server
-# split terminal then
+## run this to start the server (split or new terminal then)
 ./playit-linux-amd64
 
+## the server ip you can use for login (don't close the browser tab to keep the server alive)
+- teachers-kept.gl.joinmc.link
+- 147.185.221.17:44188

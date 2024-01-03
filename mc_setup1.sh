@@ -13,4 +13,4 @@ wget -P mods https://cdn.modrinth.com/data/P7dR8mSH/versions/YblXfKtI/fabric-api
 
 # Run Fabric server installer
 java -jar fabric-server-launch.jar server
-stop
+#stop
